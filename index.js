@@ -83,10 +83,10 @@ app.get("*", (req, res) => {
 // app.get("/",(req, res)=>{
 //     return res.send("<h1>welcome to store server</h1>")
 // })
-console.log = function (d) {
-    fs.createWriteStream(__dirname + "/log.log", { flags: "a" }).write(utl.format(d) + "\n")
-    process.stdout.write(utl.format(d) + "\n")
-}
+// console.log = function (d) {
+//     fs.createWriteStream(__dirname + "/log.log", { flags: "a" }).write(utl.format(d) + "\n")
+//     process.stdout.write(utl.format(d) + "\n")
+// }
 app.use(ErrorMiddleware)
 // TODO:mark with once
 mongoose.connection.once("open", (err) => {
