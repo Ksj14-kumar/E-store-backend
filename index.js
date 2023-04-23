@@ -87,6 +87,7 @@ app.get("*", (req, res) => {
 //     fs.createWriteStream(__dirname + "/log.log", { flags: "a" }).write(utl.format(d) + "\n")
 //     process.stdout.write(utl.format(d) + "\n")
 // }
+console.log("hii")
 app.use(ErrorMiddleware)
 // TODO:mark with once
 mongoose.connection.once("open", (err) => {
